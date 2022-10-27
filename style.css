@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif; 
+    background-image: url(/How-to-Build-an-API-Driven-Weather-App.webp);
+    background-position: top center;
+    background-size: cover;
+}
+.app-wrap{
+    /* padding-top: 0; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header input{
+    width: 500px;
+   margin-top: 2px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    /* background-color: ;- */
+    border-radius: 36px 0px 36px 0px ;
+    border-bottom: 3px solid rgba(228, 17, 17, 0.617);
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.6s ease-out;
+    color: #313131;
+   
+}
+header input:focus{
+    background-color:rgba(243, 237, 237, 0.8);
+}
+main{
+    flex: 1 1 100%;
+    padding:25px 25px 50px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.location .city{
+color: #ed3012;
+font-size: 42px;
+font-weight: 500;
+/* margin-bottom: 15px; */
+}
+.location .date{
+   color: #ed3012; 
+   font-size: 26px;
+}
+.current .temp{
+    color:#ed3012;
+    font-size: 200px;
+    font-weight: 900;
+    /* margin: 40px 0; */
+    text-shadow: 0 5px rgba(0, 0, 0, 0.5);
+margin-top:10px  ;
+/* margin-bottom: 80px; */
+}
+.current .temp span{
+    font-weight: 200;
+}
+.current .weather {
+    color: #ed3012;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+}
+.current .hi-low{
+    color: #ed3012;
+    font-size: 28px;
+    font-weight: 600;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
+}
